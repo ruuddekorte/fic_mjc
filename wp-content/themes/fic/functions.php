@@ -7,19 +7,19 @@ function fic_styles() {
 	wp_enqueue_style('css_custom', get_template_directory_uri().'/style.css', array(), 'FIC_VERSION', 'all');
 //script	
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/js/bootstrap.min.js', array('jquery'), 'FIC_VERSION', true);
-	wp_enqueue_script('js_admin_script', get_template_directory_uri().'/js/fic.js', array(), 'fic_VERSION', true);
+	wp_enqueue_script('js_admin_script', get_template_directory_uri().'/js/fic.js', array('jquery', 'bootstrap-js'), 'fic_VERSION', true);
 }
 /*Add style*/
 add_action('wp_enqueue_scripts','fic_styles');
 
 
 //admin
-function theme_admin_scripts() {
+function fic_admin_scripts() {
 	//styles
 	wp_enqueue_style('bootstrap-adm', get_template_directory_uri().'/css/bootstrap.min.css', array(), 'FIC_VERSION', 'all');
 }
 
-add_action('admin_init', 'theme_admin_scripts');	
+add_action('admin_init', 'fic_admin_scripts');	
 
 //=========================================================
 //               UTILITIES
@@ -37,3 +37,4 @@ function fic_setup(){
 }
 
 add_action('after_setup_theme', 'fic_setup');
+
