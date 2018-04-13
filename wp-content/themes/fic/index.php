@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html <?php language_attributes(); ?> >
 <head>
-	<title>ficmjc theme and templates</title>
-	<meta charset="utf-8">
+	<title>Fabrique d'initiatives citoyennes</title>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<meta name="description" content=" "/>
 	<?php wp_head(); ?>
 </head>
 <body>
-	
+<!-- ============================================== -->	
+<!-- START BOOTSTRAP NAVBAR TOGGLE EXTERNAL CONTENT -->	
+<!-- ============================================== -->		
 	<header>
-		<h1> ficmjc theme and templates  </h1>
+		<div class="pos-f-t">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="bg-dark p-4">
+					<nav class="navbar navbar-dark bg-dark">
+					  <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/LOGO-FIC.png" alt="" class="img-responsive"></a>
+					</nav>  
+					  <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
+					<nav class="navbar navbar-dark bg-dark">
+					  <a class="navbar-brand" href="#">Le Projet Fabrique</a>
+					</nav>
+					<nav class="navbar navbar-dark bg-dark">
+					  <a class="navbar-brand" href="#">Proposez une initiative</a>
+					</nav>
+					<nav class="navbar navbar-dark bg-dark">
+					  <a class="navbar-brand" href="#">Contact</a>
+					</nav>  
+				</div>
+			</div>
+			<nav class="navbar navbar-dark bg-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+			 		<span class="navbar-toggler-icon"></span>
+				</button>
+			</nav>
+		</div>
 	</header>
-	
-	<nav>
-		<ul>
-			<li>A</li>
-			<li>B</li>
-			<li>C</li>
-		</ul>
-	</nav>
+<!-- ============================================== -->	
+<!--   END BOOTSTRAP NAVBAR TOGGLE EXTERNAL CONTENT -->	
+<!-- ============================================== -->			
+	<section>
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-sm-auto">
+					<img src="<?php echo get_template_directory_uri();?>/img/logo_ragt.png" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	<section>
 
 	<main>
 		<h2>main</h2>
@@ -42,7 +70,7 @@
 		<h2>footer</h2>
 	</footer>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	
+	<?php wp_footer(); ?>	
 </body>
 </html>
