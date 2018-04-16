@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<title>ficmjc theme and templates</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
-
-	<?php wp_head(); ?> 
-</head>
-<body>
 
 	<main>
 		<?php
@@ -59,7 +47,7 @@
 		<h2>footer</h2>
 	</footer>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+	
+	<?php wp_footer(); ?>	
 </body>
 </html>
