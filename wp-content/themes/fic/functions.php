@@ -1,4 +1,17 @@
 <?php
+//========================================================
+//					START HEADER MENU
+//========================================================
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+
+
+
+
+
 define('FIC_VERSION', '1.0.0');
 // front-end
 function fic_styles() {
@@ -32,7 +45,9 @@ function fic_setup(){
 //subtract french quotation marks
 	remove_filter('the_content', 'wptexturize');
 //title tag by wordpress
-	add_theme_support('title-tag');			
+	add_theme_support('title-tag');	
+// active gestion menu
+	register_nav_menu( array( 'primary' => 'principal') );			
 
 }
 
