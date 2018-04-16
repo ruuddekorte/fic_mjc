@@ -8,10 +8,7 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
-
-/*body {
-	background-color: #FBE580;
-}*/
+/*############## vanessa ################*/
 
 .address {
     color: darkgrey;
@@ -27,3 +24,14 @@ Tags: custom-site-layout
     /*	position:fixed;
     bottom:0;*/
 }
+
+ul li {
+	list-style: none;
+	display: inline;
+}
+
+
+/*################# ilham ###############*/
+
+
+/*################# ruud ################*/
