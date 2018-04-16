@@ -8,7 +8,35 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
+
 /*############## vanessa ################*/
+
+/*================================= */
+/* 			HEADER					*/
+/*================================= */
+
+ .img_menu {
+	max-width : 15%;
+	height: auto;
+	display: block;
+}
+
+.img_section {
+	max-width : 100%;
+	height: auto;
+	display: block;
+	padding: 1rem;
+	max-width: 15%;
+ }
+
+ ul li {
+	list-style: none;
+	display: inline;
+}
+
+/*==================================*/
+/*			FOOTER
+/*==================================*/
 
 .address {
     color: darkgrey;
@@ -19,12 +47,6 @@ Tags: custom-site-layout
     border-left: 1px solid #cccccc;
 }
 
-.footer {
-    background-color: blue;
-    /*	position:fixed;
-    bottom:0;*/
-}
-
 ul li {
 	list-style: none;
 	display: inline;
@@ -33,5 +55,14 @@ ul li {
 
 /*################# ilham ###############*/
 
+.footer {
+    background-color: blue;
+    /*	position:fixed;
+    bottom:0;*/
+}
 
 /*################# ruud ################*/
+
+.rien {
+	/* RIEN */
+}
