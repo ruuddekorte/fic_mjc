@@ -11,17 +11,33 @@ Tags: custom-site-layout
 /*body {
 	background-color: #FBE580;
 }*/
+        /********    FOOTER    **********/
 
 .address {
 	color: darkgrey;
 	font-size: 14px;
 	text-align: center;
-	border: solid;
-	border-right: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
+	/*border: solid;*/
+	border-right: 1px solid  black;
+    border-left: 1px solid black ;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+
 }
 .footer{
-	background-color: blue;
+	border-top: solid blue;
+	background-color: #cccccc;
 	position:fixed;
-    bottom:0;
+   
+}
+img{
+	display: inline-block;
+	margin:30;
+	/*max-width: 80%;*/
+	/*height: auto;*/
+
+	        /*****	fin footer    ******/
+
 }
