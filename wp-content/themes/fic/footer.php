@@ -9,7 +9,7 @@
 							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/logo1.png" alt="" class="img-responsive img_section" />
 						</div>
 						<div class="col-sm-12 col-lg-3">
-							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/lelabo.png" alt="" class="img-responsive img_section" />
+							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/facebook.jpg" alt="" class="img-responsive img_section" />
 						</div>
 						<div class="col-sm-12 col-lg-3">
 							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/logo2.png" alt="" class="img-responsive img_section" />
