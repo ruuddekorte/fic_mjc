@@ -43,7 +43,7 @@ function fic_setup(){
 //title tag by wordpress
 	add_theme_support('title-tag');	
 // active gestion menu
-	register_nav_menu( array( 'primary' => 'principal') );			
+	// register_nav_menu( array( 'primary' => 'principal') );			
 
 }
 
