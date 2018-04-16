@@ -1,5 +1,4 @@
 <?php
-<<<<<<< HEAD
 
 //========================================================
 //					START HEADER MENU
@@ -8,7 +7,7 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
-=======
+
 // ###### ========================================================
 // ###### 					START HEADER MENU
 // ###### ========================================================
@@ -17,7 +16,6 @@ add_action( 'init', 'register_my_menu' );
 // ######  	}
 // ###### 
 // ###### 	add_action( 'init', 'register_my_menu' );
->>>>>>> bfc4f2c8b078fe0266f3a44dbdafb61388ad2941
 
 define('FIC_VERSION', '1.0.0');
 
@@ -70,16 +68,9 @@ function fic_setup(){
 
 	add_action('after_setup_theme', 'fic_setup');
 
-<<<<<<< HEAD
 // active gestion menu
 // function register_my_menu() {
 //   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 // }		
 // add_action( 'after_setup_theme', 'register_my_menu' );
-=======
-	// active gestion menu
-	function register_my_menu() {
-		register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
-	}		
-	add_action( 'after_setup_theme', 'register_my_menu' );
->>>>>>> bfc4f2c8b078fe0266f3a44dbdafb61388ad2941
+

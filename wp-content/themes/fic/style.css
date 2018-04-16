@@ -8,77 +8,78 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
+
 /*############## vanessa ################*/
 
+
 /*================================= */
+
+
 /* 			HEADER					*/
+
+
 /*================================= */
 
- .img_menu {
-	max-width : 60%;
-	height: auto;
-	display: block;
-
+.img_menu {
+    max-width: 60%;
+    height: auto;
+    display: block;
 }
 
 .img_section {
-	max-width : 100%;
-	height: auto;
-	display: block;
-	padding: 1rem;
- }
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 1rem;
+}
 
-a, a:hover, a:visited, a:active {
-	color:#fff; 
-	text-decoration:none; 
-} 
+a,
+a:hover,
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
 
 .menu {
-	text-decoration: none;	
-	text-align: center;
+    text-decoration: none;
+    text-align: center;
 }
+
 .navbar-brand {
-	margin-left: 7rem;
+    margin-left: 7rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*################# ilham ###############*/
 
+
 /********    FOOTER    **********/
 
 .address {
-	color: darkgrey;
-	font-size: 14px;
-	text-align: center;
-	border: 0;
-	border-right: 1px solid  darkgrey;
-    border-left: 1px solid darkgrey ;
+    color: darkgrey;
+    font-size: 14px;
+    text-align: center;
+    border: 0;
+    border-right: 1px solid darkgrey;
+    border-left: 1px solid darkgrey;
     padding-left: 50px;
-    padding-right: 50px; 
+    padding-right: 50px;
 }
 
-footer{
-	border-top: solid blue;
-	background-color: #cccccc;
-/*	position:fixed;*/
-padding-bottom: 50px;
+footer {
+    border-top: solid blue;
+    background-color: #cccccc;
+    /*	position:fixed;*/
+    padding-bottom: 50px;
 }
+
 
 /*****	fin footer    ******/
+
 
 /*################# ruud ################*/
 
 .rien {
-	/* RIEN */
+    /* RIEN */
 }
