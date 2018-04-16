@@ -17,11 +17,13 @@
 			<div class="collapse" id="navbarToggleExternalContent">
 				<div class="bg-dark p-4">
 					<nav class="navbar navbar-dark bg-dark">
-					  <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_menu"/></a>					 
-					  <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->					
-					  <a class="navbar-brand" href="#">Le Projet Fabrique</a>				
-					  <a class="navbar-brand" href="#">Proposez une initiative</a>
-					  <a class="navbar-brand" href="#">Contact</a>
+						<ul>
+							<li><a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_menu"/></a></li>					 
+							<!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->					
+							<li><a class="navbar-brand" href="#">Le Projet Fabrique</a></li>				
+							<li><a class="navbar-brand" href="#">Proposez une initiative</a></li>
+							<li><a class="navbar-brand" href="#">Contact</a></li>
+						</ul>	
 					</nav>  
 				</div>
 			</div>

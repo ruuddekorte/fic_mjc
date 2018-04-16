@@ -8,10 +8,47 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
-/*body {
-	background-color: #FBE580;
-}*/
-        /********    FOOTER    **********/
+/*############## vanessa ################*/
+
+/*================================= */
+/* 			HEADER					*/
+/*================================= */
+
+ .img_menu {
+	max-width : 15%;
+	height: auto;
+	display: block;
+}
+
+.img_section {
+	max-width : 100%;
+	height: auto;
+	display: block;
+	padding: 1rem;
+ }
+
+ ul li {
+	list-style: none;
+	display: inline;
+}
+
+/*==================================*/
+/*			FOOTER
+/*==================================*/
+
+.address {
+    color: darkgrey;
+    font-size: 14px;
+    text-align: center;
+    border: solid;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+
+
+/*################# ilham ###############*/
+
+/********    FOOTER    **********/
 
 .address {
 	color: darkgrey;
@@ -32,12 +69,10 @@ Tags: custom-site-layout
 	position:fixed;
    
 }
-img{
-	display: inline-block;
-	margin:30;
-	/*max-width: 80%;*/
-	/*height: auto;*/
+/*****	fin footer    ******/
 
-	        /*****	fin footer    ******/
+/*################# ruud ################*/
 
+.rien {
+	/* RIEN */
 }

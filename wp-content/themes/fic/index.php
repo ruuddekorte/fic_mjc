@@ -37,18 +37,13 @@
 				<h2 class="center">Not Found</h2>
 				<p class="center">
 				<?php _e("Sorry, but you are looking for something that isn't here."); ?></p>
-			<?php endif;
-		get_sidebar();
-		get_footer(); 
-		?>
+			<?php endif; ?>
+		<?php get_sidebar(); ?>
 	</main>
 
-	<footer>
-		<h2>footer</h2>
-	</footer>
 
-	
-	<?php wp_footer(); ?>	
+	<?php get_footer( $name ); ?>	
+
 </body>
 </html>
 
