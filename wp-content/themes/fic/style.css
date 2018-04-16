@@ -54,21 +54,20 @@ Tags: custom-site-layout
 	color: darkgrey;
 	font-size: 14px;
 	text-align: center;
-	/*border: solid;*/
-	border-right: 1px solid  black;
-    border-left: 1px solid black ;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-
+	border: 0;
+	border-right: 1px solid  darkgrey;
+    border-left: 1px solid darkgrey ;
+    padding-left: 50px;
+    padding-right: 50px; 
 }
-.footer{
+
+footer{
 	border-top: solid blue;
 	background-color: #cccccc;
-	position:fixed;
-   
+/*	position:fixed;*/
+padding-bottom: 50px;
 }
+
 /*****	fin footer    ******/
 
 /*################# ruud ################*/
