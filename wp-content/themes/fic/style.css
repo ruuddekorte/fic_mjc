@@ -8,24 +8,22 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
-body {
+/*body {
 	background-color: #FBE580;
-}
+}*/
 
-
-/*=================================*/
-/*				HEADER
-/*=================================*/
-.img_menu {
-	max-width : 15%;
-	height: auto;
-	display: block;
+.address {
+	color: darkgrey;
+	font-size: 14px;
+	text-align: center;
+	border: solid;
+	border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
 }
-.img_section {
-	max-width : 100%;
-	height: auto;
-	display: block;
-	padding: 1rem;
+.footer{
+	background-color: blue;
+	position:fixed;
+    bottom:0;
 }
 ul li {
 	list-style: none;
