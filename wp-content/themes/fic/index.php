@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-	<title>ficmjc theme and templates</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.css">
-	<?php wp_head(); ?>
-</head>
-<body>
-	
-	<header>
-		<h1> ficmjc theme and templates  </h1>
-	</header>
-	
-	<nav>
-		<ul>
-			<li>A</li>
-			<li>B</li>
-			<li>C</li>
-		</ul>
-	</nav>
+<?php get_header(); ?>
+
 
 	<main>
 		<h2>main</h2>
@@ -38,4 +17,15 @@
 		Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 	</p>
 
+
 	<?php get_footer(); ?>
+
+	<footer>
+		<h2>footer</h2>
+	</footer>
+
+	
+	<?php wp_footer(); ?>	
+</body>
+</html>
+
