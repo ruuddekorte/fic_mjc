@@ -15,7 +15,7 @@ Tags: custom-site-layout
 /*================================= */
 
  .img_menu {
-	max-width : 15%;
+	max-width : 30%;
 	height: auto;
 	display: block;
 }
@@ -27,9 +27,10 @@ Tags: custom-site-layout
 	padding: 1rem;
  }
 
- ul li {
+.navbar_menu .nav_menu {
 	list-style: none;
 	display: inline;
+	
 }
 
 /*==================================*/
