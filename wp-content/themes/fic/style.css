@@ -15,9 +15,10 @@ Tags: custom-site-layout
 /*================================= */
 
  .img_menu {
-	max-width : 30%;
+	max-width : 60%;
 	height: auto;
 	display: block;
+
 }
 
 .img_section {
@@ -27,24 +28,29 @@ Tags: custom-site-layout
 	padding: 1rem;
  }
 
-.navbar_menu .nav_menu {
-	list-style: none;
-	display: inline;
-	
+a, a:hover, a:visited, a:active {
+	color:#fff; 
+	text-decoration:none; 
+} 
+
+.menu {
+	text-decoration: none;	
+	text-align: center;
+}
+.navbar-brand {
+	margin-left: 7rem;
 }
 
-/*==================================*/
-/*			FOOTER
-/*==================================*/
 
-.address {
-    color: darkgrey;
-    font-size: 14px;
-    text-align: center;
-    border: solid;
-    border-right: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-}
+
+
+
+
+
+
+
+
+
 
 
 /*################# ilham ###############*/
