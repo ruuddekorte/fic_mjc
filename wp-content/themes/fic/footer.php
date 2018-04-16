@@ -2,14 +2,16 @@
 			<section>
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-12 col-lg-4">
-							<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_section"/>
+						<div class="col-sm-12 col-lg-3">
+							<img src="<?php echo get_template_directory_uri();?>/img/logo-MJC-Onet.jpg" alt="" class="img-responsive img_section"/>
 						</div>
-						<div class="col-sm-12 col-lg-4">
-							<img src="<?php echo get_template_directory_uri();?>/img/logos/logos-mjc-onet.png" alt="" class="img-responsive img_section"/>
+						<div class="col-sm-12 col-lg-3">
+							<img src="<?php echo get_template_directory_uri();?>/img/logo1.png" alt="" class="img-responsive img_section"/>
 						</div>
-						<div class="col-sm-12 col-lg-4">
-							<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-CIEC.png" alt="" class="img-responsive img_section"/>
+						<div class="col-sm-12 col-lg-3">
+							<img src="<?php echo get_template_directory_uri();?>/img/LELABO.png" alt="" class="img-responsive img_section"/>
+						<div class="col-sm-12 col-lg-3">
+							<img src="<?php echo get_template_directory_uri();?>/img/logo2.png" alt="" class="img-responsive img_section"/>
 						</div>
 						<div class="col-sm-12 col-lg-12 address">
 							<p>Miason des jeunes et de la culture- 26 boulevard des  Capucines-onet-le-Château-BP 3425-12034 Rodez</br>
