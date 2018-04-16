@@ -30,6 +30,18 @@ function fic_admin_scripts() {
 
 add_action('admin_init', 'fic_admin_scripts');	
 
+
+// /* Theme setup */
+// add_action( 'after_setup_theme', 'wpt_setup' );
+//     if ( ! function_exists( 'wpt_setup' ) ):
+//         function wpt_setup() {  
+//             register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
+//         } endif;
+// // Register custom navigation walker
+//     require_once('wp_bootstrap_navwalker.php');
+
+
+
 //=========================================================
 //               UTILITIES
 //=========================================================
@@ -42,11 +54,18 @@ function fic_setup(){
 	remove_filter('the_content', 'wptexturize');
 //title tag by wordpress
 	add_theme_support('title-tag');	
-// active gestion menu
-	// register_nav_menu( array( 'primary' => 'principal') );			
+//register menu external content
+	// require_once('includes/wp_external-content.php');
+
+	
 
 }
 
 add_action('after_setup_theme', 'fic_setup');
 
 
+// active gestion menu
+function register_my_menu() {
+  register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
+}		
+add_action( 'after_setup_theme', 'register_my_menu' );
