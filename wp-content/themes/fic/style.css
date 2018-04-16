@@ -37,35 +37,29 @@ Tags: custom-site-layout
 /*==================================*/
 
 .address {
-    color: darkgrey;
-    font-size: 14px;
-    text-align: center;
-    border: solid;
-    border-right: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-}
-
-
-/*################# ilham ###############*/
-
-/********    FOOTER    **********/
-
-.address {
-	color: darkgrey;
-	font-size: 14px;
+	/*color: darkgrey;*/
+	font-size: 16px ;
+	color: #656565;
 	text-align: center;
 	border: 0;
-	border-right: 1px solid  darkgrey;
+	border-right: 1px solid darkgrey;
     border-left: 1px solid darkgrey ;
     padding-left: 50px;
     padding-right: 50px; 
+
 }
 
 footer{
 	border-top: solid blue;
 	background-color: #cccccc;
 /*	position:fixed;*/
-padding-bottom: 50px;
+    padding-bottom: 50px;
+}
+p{
+	text-align: center;
+	color: darkgrey;
+
+
 }
 
 /*****	fin footer    ******/
