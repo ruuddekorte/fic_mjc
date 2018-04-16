@@ -8,49 +8,19 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
-/*body {
-	background-color: #FBE580;
-}*/
-/*=================================
-/* 			HEADER
-/*=================================*/
-.img_menu {
-	max-width: 15%;
-}
 
+/*############## vanessa ################*/
 
-ul li {
-	list-style: none;
-	display: inline;
-}
+/*================================= */
+/* 			HEADER					*/
+/*================================= */
 
-
-
-/*
-Theme Name: intranet
-Description: theme for intranet RAGT 
-Author: Vanessa Chaillou Delouvrier
-Version: 1.0
-Text Domain: intranet
-
-*/
-
-body {
-	background-image: url('img/background/summer/img_0.jpg');
-	/*background-repeat: no-repeat;*/
-	background-size: cover; 
-}
-
-
-
-/*=================================
-/*               HEADER
-/*=================================*/
  .img_menu {
 	max-width : 15%;
 	height: auto;
 	display: block;
 }
+
 .img_section {
 	max-width : 100%;
 	height: auto;
@@ -63,14 +33,10 @@ body {
 	display: inline;
 }
 
-
-
-
-
-
 /*==================================*/
 /*			FOOTER
 /*==================================*/
+
 .address {
     color: darkgrey;
     font-size: 14px;
@@ -79,10 +45,23 @@ body {
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
 }
-.footer{
+
+ul li {
+	list-style: none;
+	display: inline;
+}
+
+
+/*################# ilham ###############*/
+
+.footer {
     background-color: blue;
-    position:fixed;
-    bottom:0;
- }
+    /*	position:fixed;
+    bottom:0;*/
+}
 
+/*################# ruud ################*/
 
+.rien {
+	/* RIEN */
+}
