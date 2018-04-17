@@ -51,6 +51,6 @@ function fic_setup(){
 	add_action('after_setup_theme', 'fic_setup');
 
 
-);
+// );
 
 
