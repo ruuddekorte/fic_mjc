@@ -18,14 +18,9 @@ Tags: custom-site-layout
 /* 			HEADER					*/
 
 
-/*================================= */
-
-.img_menu {
-    max-width: 60%;
-    height: auto;
-    display: block;
-}
-
+/*.img_menu {
+    max-width: 15%;
+}*/
 .img_section {
     max-width: 100%;
     height: auto;
@@ -33,22 +28,29 @@ Tags: custom-site-layout
     padding: 1rem;
 }
 
-a,
-a:hover,
-a:visited,
+
+ul#menu-menu-principal a:link, a:hover, a:visited, 
 a:active {
     color: #fff;
     text-decoration: none;
 }
 
-.menu {
-    text-decoration: none;
+#menu-menu-principal {
+    list-style: none;
     text-align: center;
+
+}
+
+.wpcf7-form {
+	text-align: center;
 }
 
 .navbar-brand {
     margin-left: 7rem;
+
 }
+
+
 
 
 /*################# ilham ###############*/
@@ -68,11 +70,21 @@ a:active {
 }
 
 footer {
+    border-top: 3px solid #668894;
+
     border-top: solid blue;
     background-color: #cccccc;
     /*	position:fixed;*/
     padding-bottom: 50px;
 }
+
+
+p {
+    text-align: center;
+    color: darkgrey;
+}
+
+
 
 
 /*****	fin footer    ******/
