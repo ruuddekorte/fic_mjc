@@ -13,17 +13,86 @@
 				// The following template tags get the current post's 
 	         	// title, the time it was posted, and who posted it.
 	       		?>
-				<h2 id="post-<?php the_ID(); ?>">
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-					<?php the_title(); ?>
-				</a></h2>
+	       		<div class="row">
+					<div class="col-lg-8 col-sm-12">
+						<h2 id="post-<?php the_ID(); ?>">Initiative Citoyenne : <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+							<?php the_title(); ?></a>
+						</h2>
+						<?php if( get_field('lieu') ): ?>
+							<h3>Partenaire : <?php the_field('lieu'); ?></h3>
+						<?php endif; ?>
+					</div>
+
+					<div class="col-lg-4 col-sm-12">
+						<?php if( get_field('date_debut') ): ?>
+							<?php 
+							// get raw date
+							$dateDebut = get_field('date_debut', false, false);
+							// make date object
+							$dateDebut = new DateTime($dateDebut);
+							?>
+							<h3><?php echo $dateDebut->format('j M Y'); ?></h3>
+						<?php endif; ?>	
+					</div>
+
+
+					<div class="col-lg-8 col-sm-12">
+				        <p class="entry"><strong>Description : </strong><?php the_content(); ?></p>
+						<?php if( get_field('partenaire') ): ?>
+							<p>Partenaire : <?php the_field('partenaire'); ?></p>
+						<?php endif; ?>
+							<p><strong>Contact : </strong>
+						<?php if( get_field('email') ): ?>
+							<?php the_field('email'); ?><br/>
+						<?php endif; ?>						
+						<?php if( get_field('telephone') ): ?>
+							<?php the_field('telephone'); ?>
+						<?php endif; ?></p>
+
+
+
+
+						<p>Date : 
+
+						<?php if( get_field('date_debut') ): ?> de
+							<?php 
+							// get raw date
+							$dateDebut = get_field('date_debut', false, false);
+							// make date object
+							$dateDebut = new DateTime($dateDebut);
+							?>
+							<?php echo $dateDebut->format('j M Y'); ?>  à
+						<?php endif; ?>	
+
+						<?php if( get_field('date_fin') ): ?>
+							<?php 
+							// get raw date
+							$dateFin = get_field('date_fin', false, false);
+							// make date object
+							$dateFin = new DateTime($dateFin);
+							?>
+							<?php echo $dateFin->format('j M Y'); ?>
+						<?php endif; ?>
+							
+
+						</p>
+
+
+					</div>
+
+					<div class="col-lg-4 col-sm-12">
+						<?php if( get_field('besoins') ): ?>
+							<p><strong>Besoin(s) : </strong><?php the_field('besoins'); ?></h3>
+						<?php endif; ?>
+					</div>
+
+	       		</div>
+
+ 		<!-- ###### -->
 				<small>
 					<?php the_time('F jS, Y') ?> 
 					<!-- by <?php the_author() ?> -->
 				</small>
-		        <div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
-				</div>
 				<p class="postmetadata">
 					Posted in <?php the_category(', ') ?> 
 					<strong>|</strong>

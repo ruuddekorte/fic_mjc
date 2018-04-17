@@ -101,6 +101,11 @@ body {
     background-color: #F5F560;
 }
 
+main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 /*.entry p{
     text-align: left;
     color: #000000;
