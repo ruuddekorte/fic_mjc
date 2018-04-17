@@ -20,7 +20,7 @@
 						</div>
 
 						<div class="col-sm-12 col-lg-8 ">
-							<p class="address" >Miason des jeunes et de la culture- <br />26 boulevard des Capucines Onet-le-Château-BP&nbsp;3425-12034 Rodez</br>
+							<p class="address" >Maison des jeunes et de la culture- <br />26 boulevard des Capucines Onet-le-Château-BP&nbsp;3425-12034 Rodez</br>
 							Horaires d'ouverture en période scolaire:Lundi 14h-18h,<br /> du mardi au vendredi 9h-12 et 12 et 14h-19h, Samedi 9h-12h</br>
 							Horaires d'ouverture en période de vacances scolaires: <br />Du lundi au vendredi:9h-12h et 14h-18h</p>
 						</div>
@@ -32,7 +32,7 @@
 				</div>
 			</section>
 			<div>
-				<p>Copyright : fic_onet le chateau/ simplon 2018</p>
+				<hr><p>Copyright : fic_onet le chateau/ simplon 2018</p><hr>
 			</div>
 		</footer>
 	<?php wp_footer();?>

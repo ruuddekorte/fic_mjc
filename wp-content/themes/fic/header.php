@@ -16,15 +16,20 @@
 		<div class="pos-f-t">
 			<div class="collapse" id="navbarToggleExternalContent">
 				<div class="bg-dark p-4">
-					<nav class="navbar navbar-dark bg-dark">
-						<ul>
-							<li><a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_menu"/></a></li>					 
-							<!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->					
-							<li><a class="navbar-brand" href="#">Le Projet Fabrique</a></li>				
-							<li><a class="navbar-brand" href="#">Proposez une initiative</a></li>
-							<li><a class="navbar-brand" href="#">Contact</a></li>
-						</ul>	
-					</nav>  
+					<div class="row">
+						<div class="col-sm-12 col-lg-3 menu">
+							<a class="navbar-brand" href="http://localhost:8888/"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_menu"/></a>
+						</div>
+						<div class="col-sm-12 col-lg-3 menu">
+							<a class="navbar-text" href="#">Le Projet Fabrique</a>
+						</div>
+						<div class="col-sm-12 col-lg-3 menu">
+							<a class="navbar-text" href="#">Proposez une initiative</a>
+						</div>	
+						<div class="col-sm-12 col-lg-3 menu">
+							<a class="navbar-text" href="http://localhost:8888/index.php/contact/">Contact</a>
+						</div>
+					</div>			
 				</div>
 			</div>
 			<nav class="navbar navbar-dark bg-dark">
@@ -32,23 +37,21 @@
 			 		<span class="navbar-toggler-icon"></span>
 				</button>
 			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-lg-4">
+						<a href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/logo-mjc-onet.png" alt="" class="img-responsive img_section"></a>
+					</div>
+					<div class="col-sm-12 col-lg-4">
+						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_section">
+					</div>
+					<div class="col-sm-12 col-lg-4">
+						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-CIEC.png" alt="" class="img-responsive img_section">
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 <!-- ============================================== -->	
 <!--   END BOOTSTRAP NAVBAR TOGGLE EXTERNAL CONTENT -->	
 <!-- ============================================== -->	
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-lg-4">
-					<a href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/logo-mjc-onet.png" alt="" class="img-responsive img_section"></a>
-				</div>
-				<div class="col-sm-12 col-lg-4">
-					<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_section">
-				</div>
-				<div class="col-sm-12 col-lg-4">
-					<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-CIEC.png" alt="" class="img-responsive img_section">
-				</div>
-			</div>
-		</div>
-	<section>	

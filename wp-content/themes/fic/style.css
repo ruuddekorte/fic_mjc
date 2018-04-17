@@ -8,64 +8,66 @@ Text Domain: ficmjc
 Tags: custom-site-layout
 */
 
+
 /*############## vanessa ################*/
 
 /*================================= */
 /* 			HEADER					*/
 /*================================= */
 
- .img_menu {
-	max-width : 15%;
-	height: auto;
-	display: block;
+.img_menu {
+    max-width: 15%;
+    height: auto;
+    display: block;
 }
 
 .img_section {
-	max-width : 100%;
-	height: auto;
-	display: block;
-	padding: 1rem;
- }
-
- ul li {
-	list-style: none;
-	display: inline;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 1rem;
 }
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
 
 /*==================================*/
 /*			FOOTER
 /*==================================*/
 
 .address {
-	/*color: darkgrey;*/
-	font-size: 16px ;
-	color: #656565;
-	text-align: center;
-	border: 0;
-	border-right: 1px solid darkgrey;
-    border-left: 1px solid darkgrey ;
+    /*color: darkgrey;*/
+    font-size: 16px;
+    color: #656565;
+    text-align: center;
+    border: 0;
+    border-right: 1px solid darkgrey;
+    border-left: 1px solid darkgrey;
     padding-left: 50px;
-    padding-right: 50px; 
-
+    padding-right: 50px;
 }
 
-footer{
-	border-top: solid blue;
-	background-color: #cccccc;
-/*	position:fixed;*/
+footer {
+    border-top: 3px solid #668894;
+    background-color: #cccccc;
+    /*	position:fixed;*/
     padding-bottom: 50px;
 }
-p{
-	text-align: center;
-	color: darkgrey;
 
-
+p {
+    text-align: center;
+    color: darkgrey;
 }
 
+
 /*****	fin footer    ******/
+
 
 /*################# ruud ################*/
 
 .rien {
-	/* RIEN */
+    /* RIEN */
 }
