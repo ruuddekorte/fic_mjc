@@ -14,23 +14,23 @@ Tags: custom-site-layout
 
 /*================================= */
 
-
 /* 			HEADER					*/
 
 
-/*.img_menu {
-    max-width: 15%;
-}*/
-.img_section {
-    max-width: 100%;
-    height: auto;
+
+.img-responsive {
     display: block;
-    padding: 1rem;
+    margin: auto;
+    max-width : 25%;
+    height: auto;
+    margin-top: 0.5rem;
 }
 
 
-ul#menu-menu-principal a:link, a:hover, a:visited, 
-a:active {
+.menu a,
+.menu a:link, 
+.menu a:visited, 
+.menu a:active {
     color: #fff;
     text-decoration: none;
 }

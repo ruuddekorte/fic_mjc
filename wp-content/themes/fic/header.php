@@ -24,18 +24,10 @@
 			 		<span class="navbar-toggler-icon"></span>
 				</button>
 			</nav>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-lg-4">
-						<a href="#"><img src="<?php echo get_template_directory_uri();?>/img/logos/logo-mjc-onet.png" alt="" class="img-responsive img_section"></a>
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive img_section">
-					</div>
-					<div class="col-sm-12 col-lg-4">
-						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-CIEC.png" alt="" class="img-responsive img_section">
-					</div>
-				</div>
+			
+						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive">
+				
+				
 			</div>
 		</div>
 	</header>
