@@ -14,40 +14,36 @@ Tags: custom-site-layout
 
 /*================================= */
 
-
 /* 			HEADER					*/
 
 
-.img_menu {
-    max-width: 15%;
 
-/*================================= */
-
-.img_menu {
-    max-width: 60%;
-    height: auto;
+.img-responsive {
     display: block;
-}
-
-.img_section {
-    max-width: 100%;
+    margin: auto;
+    max-width : 25%;
     height: auto;
-    display: block;
-    padding: 1rem;
-
+    margin-top: 0.5rem;
 }
 
 
-a:hover,
-a:visited,
-a:active {
+
+.menu a:hover,
+.menu a:link, 
+.menu a:visited, 
+.menu a:active {
     color: #fff;
     text-decoration: none;
 }
 
-.menu {
-    text-decoration: none;
+#menu-menu-principal {
+    list-style: none;
     text-align: center;
+
+}
+
+.wpcf7-form {
+	text-align: center;
 }
 
 .navbar-brand {
@@ -55,14 +51,8 @@ a:active {
 
 }
 
-ul li {
-    list-style: none;
-    display: inline;
-}
-
 
                     /*==========sidebar================*/
-
 #sidebar {
     width: 220px;
     float: right;
@@ -77,6 +67,9 @@ ul li {
 }
 
                     /*===========fin sidbar==================*/
+
+                    /*################# ilham ###############*/
+
 
 
                     /*============FOOTER=================*/
@@ -94,7 +87,6 @@ ul li {
 
 footer {
     border-top: 3px solid #668894;
-
     border-top: solid blue;
     background-color: #cccccc;
     /*	position:fixed;*/
@@ -102,8 +94,9 @@ footer {
 }
 
 
+
 p footer{
-    text-align: center;
+  text-align: center;
     color: darkgrey;
 }
 
@@ -118,3 +111,17 @@ p footer{
 .rien {
     /* RIEN */
 }
+
+body {
+    background-color: #F5F560;
+}
+
+main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*.entry p{
+    text-align: left;
+    color: #000000;
+}*/
