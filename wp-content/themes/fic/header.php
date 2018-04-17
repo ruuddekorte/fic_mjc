@@ -24,11 +24,7 @@
 			 		<span class="navbar-toggler-icon"></span>
 				</button>
 			</nav>
-			
-						<img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive">
-				
-				
-			</div>
+				<a href="/"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive"></a>
 		</div>
 	</header>
 <!-- ============================================== -->	

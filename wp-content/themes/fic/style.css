@@ -28,6 +28,7 @@ Tags: custom-site-layout
 
 
 .menu a,
+.menu a:hover,
 .menu a:link, 
 .menu a:visited, 
 .menu a:active {
