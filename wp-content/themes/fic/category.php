@@ -35,12 +35,14 @@
 					<?php while (have_posts()) : the_post(); ?>
 					<div class="post">
 					<h2 id="post-<?php the_ID(); ?>">
+						<!-- ip -->
+						<figure class="img_intro">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 				<?php the_title(); ?></a></h2>
-					<small>
-						<?php the_time('F jS, Y') ?> 
-						<!-- by <?php the_author() ?> -->
-					</small>
+				 <!--ip  -->
+					<p><em> Ecrit par <?php the_author() ?> le<?php the_time(get_option('date_format')); ?> </em></p>
+				<!-- ip -->
+					
 			</div>
 		<?php endwhile; ?>
 			<div class="navigation">

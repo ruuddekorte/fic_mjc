@@ -13,16 +13,22 @@
 				// The following template tags get the current post's 
 	         	// title, the time it was posted, and who posted it.
 	       		?>
+
 				<h2 id="post-<?php the_ID(); ?>">
+				<figure class="img_intro">
+					<!-- ilham -->
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+				</figure>
 					<?php the_title(); ?>
 				</a></h2>
-				<small>
-					<?php the_time('F jS, Y') ?> 
-					<!-- by <?php the_author() ?> -->
-				</small>
+						
+				 <!--ip  -->
+					<p><em> Ecrit par <?php the_author() ?> le<?php the_time(get_option('date_format')); ?> </em></p>
+				<!-- ip -->
+				
 		        <div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<?php the_content('lire la suite ...'); ?>
+					<!-- ip -->
 				</div>
 				<p class="postmetadata">
 					Posted in <?php the_category(', ') ?> 
@@ -49,5 +55,8 @@
 		<?php endif; ?>
 
 	</main>
+	<!-- charger le sidebar   ilham -->
+	<?php get_template_part('sidebar'); ?>
+	<!-- fin -->
 
 	<?php get_footer(); ?>	

@@ -8,16 +8,10 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+// ============ activation sidebar   =========
 
-// ###### ========================================================
-// ###### 					START HEADER MENU
-// ###### ========================================================
-// ###### function register_my_menu() {
-// ######  	register_nav_menu('header-menu',__( 'Header Menu' ));
-// ######  	}
-// ###### 
-// ###### 	add_action( 'init', 'register_my_menu' );
-
+  add_action('init','register_my_menu');
+  register_sidebar(1);
 
 
 
