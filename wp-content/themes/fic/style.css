@@ -79,7 +79,7 @@ footer {
 }
 
 
-p {
+footer p {
     text-align: center;
     color: darkgrey;
 }
@@ -95,3 +95,12 @@ p {
 .rien {
     /* RIEN */
 }
+
+body {
+    background-color: #F5F560;
+}
+
+/*.entry p{
+    text-align: left;
+    color: #000000;
+}*/
