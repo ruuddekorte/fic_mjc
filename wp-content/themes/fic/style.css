@@ -19,13 +19,6 @@ Tags: custom-site-layout
 
 
 /*================================= */
-
-.img_menu {
-    max-width: 60%;
-    height: auto;
-    display: block;
-}
-
 .img_section {
     max-width: 100%;
     height: auto;
@@ -41,9 +34,14 @@ a:active {
     text-decoration: none;
 }
 
-.menu {
-    text-decoration: none;
+#menu-menu-principal {
+    list-style: none;
     text-align: center;
+
+}
+
+.wpcf7-form {
+	text-align: center;
 }
 
 .navbar-brand {
