@@ -1,5 +1,6 @@
 <?php
 
+
 //========================================================
 //					START HEADER MENU
 //========================================================
@@ -16,6 +17,9 @@ add_action( 'init', 'register_my_menu' );
 // ######  	}
 // ###### 
 // ###### 	add_action( 'init', 'register_my_menu' );
+
+
+
 
 define('FIC_VERSION', '1.0.0');
 
@@ -68,9 +72,15 @@ function fic_setup(){
 
 	add_action('after_setup_theme', 'fic_setup');
 
+
 // active gestion menu
 // function register_my_menu() {
 //   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 // }		
+// add_action( 'after_setup_theme', 'register_my_menu'
+	// active gestion menu
+	
+
 // add_action( 'after_setup_theme', 'register_my_menu' );
+
 

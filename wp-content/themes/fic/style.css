@@ -18,15 +18,19 @@ Tags: custom-site-layout
 /* 			HEADER					*/
 
 
+.img_menu {
+    max-width: 15%;
+
 /*================================= */
 .img_section {
     max-width: 100%;
     height: auto;
     display: block;
     padding: 1rem;
+
 }
 
-a,
+
 a:hover,
 a:visited,
 a:active {
@@ -46,9 +50,24 @@ a:active {
 
 .navbar-brand {
     margin-left: 7rem;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline;
 }
 
 
+
+/*==================================*/
+/*			FOOTER
+/*==================================*/
+
+.address {
+    /*color: darkgrey;*/
+    font-size: 16px;
+    color: #656565;
 /*################# ilham ###############*/
 
 
@@ -66,11 +85,21 @@ a:active {
 }
 
 footer {
+    border-top: 3px solid #668894;
+
     border-top: solid blue;
     background-color: #cccccc;
     /*	position:fixed;*/
     padding-bottom: 50px;
 }
+
+
+p {
+    text-align: center;
+    color: darkgrey;
+}
+
+
 
 
 /*****	fin footer    ******/
