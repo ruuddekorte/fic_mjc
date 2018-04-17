@@ -19,6 +19,8 @@ add_action( 'init', 'register_my_menu' );
 // ###### 	add_action( 'init', 'register_my_menu' );
 
 
+
+
 define('FIC_VERSION', '1.0.0');
 
 // ###### front-end
@@ -78,3 +80,7 @@ function fic_setup(){
 // add_action( 'after_setup_theme', 'register_my_menu'
 	// active gestion menu
 	
+
+// add_action( 'after_setup_theme', 'register_my_menu' );
+
+

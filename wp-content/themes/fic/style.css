@@ -11,12 +11,20 @@ Tags: custom-site-layout
 
 /*############## vanessa ################*/
 
+
 /*================================= */
+
+
 /* 			HEADER					*/
-/*================================= */
+
 
 .img_menu {
     max-width: 15%;
+
+/*================================= */
+
+.img_menu {
+    max-width: 60%;
     height: auto;
     display: block;
 }
@@ -26,12 +34,32 @@ Tags: custom-site-layout
     height: auto;
     display: block;
     padding: 1rem;
+
+}
+
+
+a:hover,
+a:visited,
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-brand {
+    margin-left: 7rem;
+
 }
 
 ul li {
     list-style: none;
     display: inline;
 }
+
 
 
 /*==================================*/
@@ -42,6 +70,14 @@ ul li {
     /*color: darkgrey;*/
     font-size: 16px;
     color: #656565;
+/*################# ilham ###############*/
+
+
+/********    FOOTER    **********/
+
+.address {
+    color: darkgrey;
+    font-size: 14px;
     text-align: center;
     border: 0;
     border-right: 1px solid darkgrey;
@@ -52,15 +88,20 @@ ul li {
 
 footer {
     border-top: 3px solid #668894;
+
+    border-top: solid blue;
     background-color: #cccccc;
     /*	position:fixed;*/
     padding-bottom: 50px;
 }
 
+
 p {
     text-align: center;
     color: darkgrey;
 }
+
+
 
 
 /*****	fin footer    ******/
