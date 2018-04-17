@@ -29,8 +29,7 @@ Tags: custom-site-layout
 }
 
 
-ul#menu-menu-principal a:link, a:hover, a:visited, 
-a:active {
+.menu a, .menu a:link, .menu a:hover, .menu a:visited, .menu a:active {
     color: #fff;
     text-decoration: none;
 }
@@ -79,7 +78,7 @@ footer {
 }
 
 
-p {
+footer p {
     text-align: center;
     color: darkgrey;
 }
@@ -99,3 +98,8 @@ p {
 body {
     background-color: #F5F560;
 }
+
+/*.entry p{
+    text-align: left;
+    color: #000000;
+}*/
