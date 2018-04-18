@@ -8,6 +8,10 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+// ============ activation sidebar   =========
+
+ 
+  register_sidebar(1);
 
 
 define('FIC_VERSION', '1.0.0');
