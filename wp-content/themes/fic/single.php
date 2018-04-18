@@ -19,27 +19,24 @@
 							<?php the_title(); ?></a>
 						</h2>
 						<?php if( get_field('lieu') ): ?>
-							<h3>Partenaire : <?php the_field('lieu'); ?></h3>
+							<h3>Lieu : <?php the_field('lieu'); ?></h3>
 						<?php endif; ?>
 					</div>
 
 					<div class="col-lg-4 col-sm-12">
-						<?php if( get_field('date_debut') ): ?>
-							<?php 
-							// get raw date
+						<h3><?php if( get_field('date_debut') ): 
 							$dateDebut = get_field('date_debut', false, false);
-							// make date object
 							$dateDebut = new DateTime($dateDebut);
-							?>
-							<h3><?php echo $dateDebut->format('j M Y'); ?></h3>
+							echo $dateDebut->format('j M Y'); ?>
 						<?php endif; ?>	
+						</h3>
 					</div>
 
 
 					<div class="col-lg-8 col-sm-12">
 				        <p class="entry"><strong>Description : </strong><?php the_content(); ?></p>
 						<?php if( get_field('partenaire') ): ?>
-							<p>Partenaire : <?php the_field('partenaire'); ?></p>
+							<p><strong>Partenaire : </strong><?php the_field('partenaire'); ?></p>
 						<?php endif; ?>
 							<p><strong>Contact : </strong>
 						<?php if( get_field('email') ): ?>
@@ -50,34 +47,20 @@
 						<?php endif; ?></p>
 
 
-
-
-						<p>Date : 
-
+						<p><strong>Date : </strong>
 						<?php if( get_field('date_debut') ): ?> de
 							<?php 
-							// get raw date
 							$dateDebut = get_field('date_debut', false, false);
-							// make date object
 							$dateDebut = new DateTime($dateDebut);
-							?>
-							<?php echo $dateDebut->format('j M Y'); ?>  à
+							echo $dateDebut->format('j M Y'); ?>  à
 						<?php endif; ?>	
 
-						<?php if( get_field('date_fin') ): ?>
-							<?php 
-							// get raw date
+						<?php if( get_field('date_fin') ): 
 							$dateFin = get_field('date_fin', false, false);
-							// make date object
 							$dateFin = new DateTime($dateFin);
-							?>
-							<?php echo $dateFin->format('j M Y'); ?>
-						<?php endif; ?>
-							
-
+							echo $dateFin->format('j M Y'); 
+						endif; ?>
 						</p>
-
-
 					</div>
 
 					<div class="col-lg-4 col-sm-12">
@@ -88,19 +71,18 @@
 
 	       		</div>
 
- 		<!-- ###### -->
-				<small>
-					<?php the_time('F jS, Y') ?> 
+				<small>Cette Initiative Citoyenne est deposé le :
+					<?php the_time('j F Y') ?> 
 					<!-- by <?php the_author() ?> -->
 				</small>
 				<p class="postmetadata">
-					Posted in <?php the_category(', ') ?> 
+					Categorie : <?php the_category(', ') ?> 
 					<strong>|</strong>
 					<?php edit_post_link('Edit','','<strong>|</strong>'); ?>  
 					<?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
 				</p>
-				<!--
 					<?php trackback_rdf(); ?>
+				<!--
 				-->
 			<?php endwhile; ?>
 				<!-- This section, immediately after the end of The Loop, displays navigation controls to move forward and backward by each web page. More information is available in function reference for posts_nav_link(). -->
