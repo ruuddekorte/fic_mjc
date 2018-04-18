@@ -13,19 +13,18 @@ Tags: custom-site-layout
 
 
 /*================================= */
-
 /* 			HEADER					*/
+/*================================= */
 
 
 
 .img-responsive {
     display: block;
     margin: auto;
-    max-width : 25%;
+    max-width : 20%;
     height: auto;
     margin-top: 0.5rem;
 }
-
 
 .menu a,
 .menu a:hover,
@@ -39,7 +38,6 @@ Tags: custom-site-layout
 #menu-menu-principal {
     list-style: none;
     text-align: center;
-
 }
 
 .wpcf7-form {
