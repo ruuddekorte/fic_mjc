@@ -49,8 +49,17 @@ if( $term ): ?>
 		        <div class="entry">
 					<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
 				</div>
-			<?php endwhile; ?>
-		<?php else: ?> 
+			<?php endwhile; 
+
+			// Previous/next page navigation.
+			the_posts_pagination( array(
+				'prev_text'          => __( 'Première page', 'fic' ),
+				'next_text'          => __( '| Page suivante', 'fic' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '| Page', 'fic' ) . ' </span>',
+			) );
+
+
+			else: ?> 
 			<h2 class="center">Not Found</h2>
 			<p class="center">
 				<?php _e("Sorry, but you are looking for something that isn't here."); ?>
