@@ -1238,7 +1238,7 @@ INSERT INTO `ficmjc12_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`
 (8, 1, 'admin_color', 'fresh'),
 (9, 1, 'use_ssl', '0'),
 (10, 1, 'show_admin_bar_front', 'true'),
-(11, 1, 'locale', ''),
+(11, 1, 'locale', 'fr_FR'),
 (12, 1, 'ficmjc12_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
 (13, 1, 'ficmjc12_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
@@ -1465,6 +1465,7 @@ ALTER TABLE `ficmjc12_users`
   ADD KEY `user_login_key` (`user_login`),
   ADD KEY `user_nicename` (`user_nicename`),
   ADD KEY `user_email` (`user_email`);
+
 
 --
 -- Index pour la table `ficmjc12_yoast_seo_links`
