@@ -61,16 +61,16 @@
 					<p class="postmetadata">
 						Categorie : <?php the_category(', ') ?> 
 						<strong>|</strong>
-						<?php edit_post_link('Edit','','<strong>|</strong>'); ?>  
+						<?php edit_post_link('Edit ','','<strong>|</strong>'); ?>  
 						<?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
 					</p>
+<?php
+			// Previous/next post navigation.
+			the_post_navigation( array(
+				'next_text'   => __( 'Prochaine initiative : ', 'fic' ) . '<span class="post-title">%title</span>',
+				'prev_text'    => __( 'Dernière initiative : ', 'fic' ) . '<span class="post-title">%title</span>',
+			) ); ?>
 				<?php endwhile; ?>
-				<div class="navigation">
-					<div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?>
-					</div>
-					<div class="alignright"><?php next_posts_link('Next Entries &raquo;','') ?>
-					</div>
-				</div>
 			<?php else: ?> 
 				<h2 class="center">Not Found</h2>
 				<p class="center">

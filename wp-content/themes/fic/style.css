@@ -61,14 +61,14 @@ Tags: custom-site-layout
 /*==========sidebar================*/
 #sidebar {
     width: 220px;
-    float: right;
+    /*float: right;*/
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
 
 #contenu {
     width: auto;
-    float: left;
+    /*float: left;*/
     margin-bottom: 10px;
 }
 
@@ -133,3 +133,8 @@ main {
 h2.screen-reader-text {
     display: none;
 }
+
+.screen-reader-text {
+    display: none;
+}
+

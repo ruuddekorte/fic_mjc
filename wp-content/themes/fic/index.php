@@ -21,12 +21,12 @@ define( 'WP_USE_THEMES', false ); get_header();
 				// End the loop.
 				endwhile;
 
-				// Previous/next page navigation.
-				the_posts_pagination( array(
-					'prev_text'          => __( 'Previous page', 'fic' ),
-					'next_text'          => __( 'Next page', 'fic' ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'fic' ) . ' </span>',
-				) );
+			// Previous/next page navigation.
+			the_posts_pagination( array(
+				'prev_text'          => __( 'Première page', 'fic' ),
+				'next_text'          => __( '| Page suivante', 'fic' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '| Page', 'fic' ) . ' </span>',
+			) );
 			// If no content, show "No posts found".
 			else : ?> 
 				<h2 class="center">Not Found</h2>
