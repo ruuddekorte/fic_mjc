@@ -32,7 +32,7 @@
 				</div>
 			</section>
 			<div>
-				<hr><h6>&copy;Copyright : fic_onet le chateau/ simplon 2018</h6><hr>
+				<p>&copy; Copyright : fic_onet le chateau/ simplon 2018</p>
 			</div>
 		</footer>
 	<?php wp_footer();?>

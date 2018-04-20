@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<section id="contenu">
+	<main id="contenu">
 		<?php if (have_posts()){
 			while (have_posts()) {
 			 the_post();
@@ -12,5 +12,5 @@
 			} 
 		}
 		?>
-	</section>
+	</main>
 <?php get_footer(); ?>

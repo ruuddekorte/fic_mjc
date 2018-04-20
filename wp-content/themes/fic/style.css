@@ -9,7 +9,7 @@ Tags: custom-site-layout
 */
 
 
-/*############## vanessa ################*/
+
 
 
 /*================================= */
@@ -71,16 +71,7 @@ p .entry {
 /*################# ilham ###############*/
 
 /*==========sidebar================*/
-#sidebar {
-    width: 220px;
-    /*float: right;*/
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
-
 #contenu {
-    /*float: left;*/
-    width: auto;
     margin-bottom: 10px;
 }
 
@@ -108,14 +99,11 @@ footer {
 
 
 
-p footer{
-  /*text-align: center;*/
+footer p{
+    text-align: center;
     color: darkgrey;
 }
 
-h6 footer {
-    text-align: center;
-}
 
 
 
@@ -127,9 +115,8 @@ h6 footer {
 
 
 body {
-    background-color: #F5F560;
+    background-color:#A2DC9F;
 }
-
 main {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -145,21 +132,10 @@ main {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 9f7524cdbaf82c5744f988e2bbcf08d263b800d4
 h2.screen-reader-text {
     display: none;
 }
 
 .screen-reader-text {
     display: none;
-<<<<<<< HEAD
 }
-
-=======
-
-}
->>>>>>> 9f7524cdbaf82c5744f988e2bbcf08d263b800d4
