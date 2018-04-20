@@ -46,6 +46,11 @@ Tags: custom-site-layout
     margin-left: 7rem;
 
 }
+.menu_header {
+    font-size: 2rem;
+    color:#fff;
+    font-weight: 800;
+}
 
 /*======================================*/
 /*        PAGE ENSEMBLE ON FABRIQUE
@@ -104,8 +109,12 @@ footer {
 
 
 p footer{
-  text-align: center;
+  /*text-align: center;*/
     color: darkgrey;
+}
+
+h6 footer {
+    text-align: center;
 }
 
 
@@ -136,12 +145,21 @@ main {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 9f7524cdbaf82c5744f988e2bbcf08d263b800d4
 h2.screen-reader-text {
     display: none;
 }
 
 .screen-reader-text {
     display: none;
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> 9f7524cdbaf82c5744f988e2bbcf08d263b800d4
