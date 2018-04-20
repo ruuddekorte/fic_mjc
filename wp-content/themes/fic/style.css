@@ -51,6 +51,14 @@ Tags: custom-site-layout
     color:#fff;
     font-weight: 800;
 }
+.menu_header a,
+.menu_header a:hover,
+.menu_header a:link, 
+.menu_header a:visited, 
+.menu_header a:active {
+    color: #fff;
+    text-decoration: none;
+}
 
 /*======================================*/
 /*        PAGE ENSEMBLE ON FABRIQUE
@@ -61,10 +69,22 @@ Tags: custom-site-layout
     padding:5px;
     font-size:1.5em;
     color:#fff;
-    background-color:#0C50A0;
     border:2px solid #000;
     width:40%;
     /*height:200px;*/
+}
+
+.fic_red {
+    background-color: #EB212E;
+
+}
+
+.fic_blue {
+    background-color:#0C50A0;
+}
+
+.fic_grey {
+    background-color: #E4E8E6;
 }
 
 /*################# ilham ###############*/
@@ -119,6 +139,8 @@ body {
 main {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .img_google {

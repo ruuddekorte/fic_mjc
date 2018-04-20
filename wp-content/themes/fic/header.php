@@ -20,12 +20,12 @@
 				</div>
 			</div>
 			<nav class="navbar navbar-dark bg-dark">
-					<span class="menu_header">Initiatives Citoyennes</span>
+					<span class="menu_header"><a href="/">Initiatives Citoyennes</a></span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 			 		<span class="navbar-toggler-icon"></span>
 				</button>
 			</nav>
-				<a href="/"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive"></a>
+				<!-- <a href="/"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive"></a> -->
 		</div>
 	</header>
 <!-- ============================================== -->	

@@ -13,9 +13,9 @@
 ?>
 
 		<main>
-			<h1>Initiatives Citoyennes</h1>
+			<!-- <h1>Initiatives Citoyennes</h1> -->
 
-			<img class="alignnone size-full wp-image-20 img_google" src="http://localhost:8888/wp-content/uploads/2018/04/plan.jpeg" alt="" width="955" height="482" />
+			<img class="alignnone size-full wp-image-20 img_google" src="/wp-content/uploads/2018/04/plan.jpeg" alt="" width="955" height="482" />
 		
 		<?php
 
@@ -42,7 +42,7 @@ if( $term ): ?>
 						$dateDebut = new DateTime($dateDebut);
 						echo $dateDebut->format('j M Y'); ?>
 					<?php endif; ?>	
-						<?php the_title(); ?>
+						<!-- <?php the_title(); ?> -->
 				</a></h2>
 		        <div class="entry">
 					<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
