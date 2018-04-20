@@ -33,7 +33,7 @@ Tags: custom-site-layout
     text-decoration: none;
 }
 
-#menu-menu-principal {
+#menu-menu-1 {
     list-style: none;
     text-align: center;
 }
@@ -46,15 +46,22 @@ Tags: custom-site-layout
     margin-left: 7rem;
 
 }
-/*=======================================*/
-/*            Page projet fabrique
-/*=======================================*/  
-#sample_slider {
-    max-width : 100%;
-    height: auto;
 
-}          
-
+/*======================================*/
+/*        PAGE ENSEMBLE ON FABRIQUE
+/*======================================*/
+p .entry {
+    display: block;
+    margin:auto;
+    padding:5px;
+    font-size:1.5em;
+    color:#fff;
+    background-color:#000080;
+    border:2px solid #000;
+    border-bottom:0;
+    width:40%;
+    /*height:200px;*/
+}
 
 /*################# ilham ###############*/
 
@@ -67,8 +74,8 @@ Tags: custom-site-layout
 }
 
 #contenu {
-    width: auto;
     /*float: left;*/
+    width: auto;
     margin-bottom: 10px;
 }
 
