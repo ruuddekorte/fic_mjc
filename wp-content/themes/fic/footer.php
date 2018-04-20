@@ -3,7 +3,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 col-lg-3">
-							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/logo-mjc-onet.jpg" alt="" class="img-responsive img_section" />
+							<img src="<?php echo get_template_directory_uri();?>/img/logos/logo-mjc-onet.png" alt="" class="img-responsive img_section" />
 						</div>
 						<div class="col-sm-12 col-lg-3">
 							<img src="<?php echo get_template_directory_uri();?>/img/images_footer/logo1.png" alt="" class="img-responsive img_section" />
@@ -32,7 +32,7 @@
 				</div>
 			</section>
 			<div>
-				<hr><h6>&copy; Copyright : fic_onet le chateau/ simplon 2018</h6><hr>
+				<p>&copy; Copyright : fic_onet le chateau/ simplon 2018</p>
 			</div>
 		</footer>
 	<?php wp_footer();?>

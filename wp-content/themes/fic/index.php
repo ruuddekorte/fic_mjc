@@ -1,63 +1,41 @@
+<?php
+/**
+ * The main template file
+ *
+ */
 
-		<?php
-		define( 'WP_USE_THEMES', false ); get_header(); 
-		?>
-		<?php get_sidebar(); ?>
 
-		<main>
+define( 'WP_USE_THEMES', false ); get_header(); 
+?>
 
-		<!-- Start the Loop. -->
-		<?php
-		if (have_posts()) :
-			while (have_posts()) :
-		    	the_post();
-				// The following template tags get the current post's 
-	         	// title, the time it was posted, and who posted it.
-	       		?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+			<?php if ( have_posts() ) : ?>
+				<?php if ( is_home() && ! is_front_page() ) : ?>
+					<header>
+						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					</header>
+				<?php endif; 
+				while ( have_posts() ) : the_post();
+				// Start the loop.
+					get_template_part( 'content', get_post_format() );
+				// End the loop.
+				endwhile;
 
-				<h2 id="post-<?php the_ID(); ?>">
-				<figure class="img_intro">
-					<!-- ilham -->
-				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-				</figure>
-					<?php the_title(); ?>
-				</a></h2>
-						
-				 <!--ip  -->
-					<p><em> Ecrit par <?php the_author() ?> le<?php the_time(get_option('date_format')); ?> </em></p>
-				<!-- ip -->
-				
-		        <div class="entry">
-					<?php the_content('lire la suite ...'); ?>
-					<!-- ip -->
-				</div>
-				<p class="postmetadata">
-					Posted in <?php the_category(', ') ?> 
-					<strong>|</strong>
-					<?php edit_post_link('Edit','','<strong>|</strong>'); ?>  
-					<?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
-				</p>
-				<!--
-					<?php trackback_rdf(); ?>
-				-->
-			<?php endwhile; ?>
-				<!-- This section, immediately after the end of The Loop, displays navigation controls to move forward and backward by each web page. More information is available in function reference for posts_nav_link(). -->
-				<div class="navigation">
-					<div class="alignleft"><?php previous_posts_link('&laquo; Previous Entries') ?>
-					</div>
-					<div class="alignright"><?php next_posts_link('Next Entries &raquo;','') ?>
-					</div>
-				</div>
-		<?php else: ?> 
-			<h2 class="center">Not Found</h2>
-			<p class="center">
+			// Previous/next page navigation.
+			the_posts_pagination( array(
+				'prev_text'          => __( 'Première page', 'fic' ),
+				'next_text'          => __( '| Page suivante', 'fic' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( '| Page', 'fic' ) . ' </span>',
+			) );
+			// If no content, show "No posts found".
+			else : ?> 
+				<h2 class="center">Not Found</h2>
+				<p class="center">
 				<?php _e("Sorry, but you are looking for something that isn't here."); ?>
-			</p>
-		<?php endif; ?>
+				</p>
+			<?php endif; ?>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
 
-	</main>
-	<!-- charger le sidebar   ilham -->
-	
-	<!-- fin -->
-
-	<?php get_footer(); ?>	
+<?php get_footer(); ?>	
