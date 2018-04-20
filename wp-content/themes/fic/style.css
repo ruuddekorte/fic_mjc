@@ -55,7 +55,7 @@ Tags: custom-site-layout
 /*======================================*/
 /*        PAGE ENSEMBLE ON FABRIQUE
 /*======================================*/
-p .entry {
+.fabrique {
     display: block;
     margin:auto;
     padding:5px;
