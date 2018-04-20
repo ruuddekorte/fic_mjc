@@ -10,7 +10,7 @@
 			</article>
 			<?php 
 			} 
-		
+		}
 		?>
 	</section>
 <?php get_footer(); ?>
