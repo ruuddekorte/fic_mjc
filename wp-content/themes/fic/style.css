@@ -9,7 +9,7 @@ Tags: custom-site-layout
 */
 
 
-/*############## vanessa ################*/
+
 
 
 /*================================= */
@@ -54,15 +54,16 @@ Tags: custom-site-layout
 
                     /*==========sidebar================*/
 #sidebar {
-    width: 220px;
-    float: right;
+    width: 300px;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    border-radius: 1px;
+    float: right;
 }
 
 #contenu {
     width: auto;
-    float: left;
+    //*float: left;*/
     margin-bottom: 10px;
 }
 
@@ -95,9 +96,13 @@ footer {
 
 
 
-p footer{
+ footer p{
   text-align: center;
     color: darkgrey;
+}
+footer h6{
+  text-align: center;
+    /*color: black;*/
 }
 
 
@@ -113,9 +118,8 @@ p footer{
 }
 
 body {
-    background-color: #F5F560;
+    background-color:#A2DC9F;
 }
-
 main {
     padding-left: 1rem;
     padding-right: 1rem;

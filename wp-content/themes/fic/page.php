@@ -1,22 +1,20 @@
-<?php get_header(); ?>
-<section id="contenu">
-	<!-- lister les article wordpress -->
-<?php
-	if (have_posts()) { 
-			while (have_posts() ) {
-		    	the_post();
-	?>
-	<article class="initiative_page">
+<?php get_header();
+	  get_sidebar(); ?>
 
-		<h2><?php the_title();?></h2>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-		<?php the_content();?>
-	</article>
-	<?php	    	
-	}
-}
-	?>
-</section>
-<?php get_template_part('sidebar');?>
+		<?php
+		// Start the loop.
+		while ( have_posts() ) : the_post(); ?>
+
+			<h2> <?php the_title(); ?> </h2>
+			<?php the_content(); ?>
+
+		<?php endwhile; ?>
+
+		</main>  <!-- .site-main -->
+	</div> <!-- .content-area -->
+
 <?php get_footer(); ?>
-<!-- fin de chargement sidebar PI -->
+
