@@ -29,6 +29,15 @@
 							/* Get initiatives */
 							$args = [
 								'post_type' => 'initiative',
+
+ 	
+				(function($) {
+					var specimens = [
+						<?php
+							/* Get amphibians */
+							$args = [
+								'post_type' => 'amphibian',
+
 								'orderby' => 'menu_order',
 								'order' => 'DESC',
 								'posts_per_page' => '-1'
@@ -38,11 +47,19 @@
 
 							// The Loop
 							if ( $specimens_query->have_posts() ) :
+
 								while ( $specimens_query->have_posts() ) :
 									$specimens_query->the_post();
+
+
+								while ( $specimens_query->have_posts() ) :
+									$specimens_query->the_post();
+
+
 									$location = get_field('map');
 
 									if(!empty($location)) :
+
 
 										echo "{";
 											echo "'lat':" . $location['lat'] . ",";
@@ -56,32 +73,37 @@
 						?>
 					];
 
-					/* Init map, must be public for callback  */
-					initMap = function() {
-						var center = {lat:   44.362621, lng: 2.580576},
-							marker = null,
-							markers = [];
+										echo "{";
+											echo "'lat':" . $location['lat'] . ",";
+											echo "'lng':" . $location['lng'] . ",";
 
-						/* Init map */
-						var map = new google.maps.Map($('#my-map')[0], {
-								zoom: 13,
-								center: center
-							});
+										echo "},\n";
+									endif;
+								endwhile;
 
-						
-					}
+							endif;
+
+							/* Restore original Post Data */
+
+							wp_reset_postdata();
+
+						?>
+
+					];
+
 				})(jQuery);
+
 			</script>
 
 			<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMrMfLNk---VXFnBzAKFt1kHqsKkM1s_k&callback=initMap"></script>
-
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_geB4hpknOVuZyGDNTmsvTwnUx7B_UeM&callback=initMap"></script>
 
 
 
 		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCE8DYaxzXQCSSt4-0P-AlKYyijurLpV8&callback=initMap"
   type="text/javascript"></script> -->
+
 		<?php
 
 			$term = get_field('initiative');
