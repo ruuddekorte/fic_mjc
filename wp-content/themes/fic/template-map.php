@@ -13,20 +13,87 @@
 ?>
 
 		<main>
-			<h1>Initiatives Citoyennes</h1>
+		<!-- <h1>Initiatives Citoyennes</h1> -->
 
-			<img class="alignnone size-full wp-image-20 img_google" src="http://localhost:8888/wp-content/uploads/2018/04/plan.jpeg" alt="" width="955" height="482" />
+		<!-- <div class="acf-map"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP6fX0jfKXq-LrlmQUMb-9hAKrmnWHKX4"></script>
+		<script type="text/javascript">
+			
+		</script> -->
 
+		<div id="my-map" style="height:500px"></div>
+		<script>
+				(function($) {
+					var specimens = [
+						<?php
+							/* Get initiatives */
+							$args = [
+								'post_type' => 'initiative',
+								'orderby' => 'menu_order',
+								'order' => 'DESC',
+								'posts_per_page' => '-1'
+							];
+
+							$specimens_query = new WP_Query( $args );
+
+							// The Loop
+							if ( $specimens_query->have_posts() ) :
+								while ( $specimens_query->have_posts() ) :
+									$specimens_query->the_post();
+									$location = get_field('map');
+
+									if(!empty($location)) :
+
+										echo "{";
+											echo "'lat':" . $location['lat'] . ",";
+											echo "'lng':" . $location['lng'] . ",";
+										echo "},\n";
+									endif;
+								endwhile;
+							endif;
+							/* Restore original Post Data */
+							wp_reset_postdata();
+						?>
+					];
+
+					/* Init map, must be public for callback  */
+					initMap = function() {
+						var center = {lat:   44.362621, lng: 2.580576},
+							marker = null,
+							markers = [];
+
+						/* Init map */
+						var map = new google.maps.Map($('#my-map')[0], {
+								zoom: 13,
+								center: center
+							});
+
+						
+					}
+				})(jQuery);
+			</script>
+
+			<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMrMfLNk---VXFnBzAKFt1kHqsKkM1s_k&callback=initMap"></script>
+
+
+
+
+		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCE8DYaxzXQCSSt4-0P-AlKYyijurLpV8&callback=initMap"
+  type="text/javascript"></script> -->
 		<?php
 
-$term = get_field('initiative');
+			$term = get_field('initiative');
 
-if( $term ): ?>
+			if( $term ):
+			 ?>
+			 <h2>
+				<?php echo $term->name; ?>
+				</h2>
+				<p><?php echo $term->description; ?></p>
 
-	<h2><?php echo $term->name; ?></h2>
-	<p><?php echo $term->description; ?></p>
-
-<?php endif; 
+			<?php endif; 
 
 /*	########################################
 	##        Start the Loop (boucle)
@@ -37,6 +104,8 @@ if( $term ): ?>
 		    	the_post(); ?>
 				<h2 id="post-<?php the_ID(); ?>">
 				<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"> 
+
+
 					<?php if( get_field('date_debut') ): 
 						$dateDebut = get_field('date_debut', false, false);
 						$dateDebut = new DateTime($dateDebut);
@@ -44,6 +113,20 @@ if( $term ): ?>
 					<?php endif; ?>	
 						<?php the_title(); ?>
 				</a></h2>
+
+ <!-- add map on the page -->
+<?php 
+
+/*$location = get_field('location');
+
+if( !empty($location) ):
+?>
+<div class="acf-map">
+	<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+</div>
+<?php endif; */ ?>
+
+
 		        <div class="entry">
 					<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
 				</div>
