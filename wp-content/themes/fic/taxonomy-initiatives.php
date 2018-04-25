@@ -1,7 +1,7 @@
 <?php
 
 /*	########################################
-	##         Template Name: Home
+	##         Template Name: Initiatives
 */	########################################
 		
 		define( 'WP_USE_THEMES', false ); get_header(); 
@@ -44,7 +44,7 @@ if( $term ): ?>
 						$dateDebut = new DateTime($dateDebut);
 						echo $dateDebut->format('j M Y'); ?>
 					<?php endif; ?>	
-			<?php the_title(); ?>
+						<?php the_title(); ?>
 				</a></h2>
 		        <div class="entry">
 					<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
@@ -62,7 +62,7 @@ if( $term ): ?>
 			else: ?> 
 			<h2 class="center">Not Found</h2>
 			<p class="center">
-				<?php _e("Sorry, but you are looking for something that isn't here.  [archive-initiatives]"); ?>
+				<?php _e("Sorry, but you are looking for something that isn't here. [taxonomy-initiative]"); ?>
 			</p>
 		<?php endif; 
 
