@@ -136,6 +136,9 @@ footer p{
 
 /*################# ruud ################*/
 
+#my-map {
+    height: 500px;
+}
 
 body {
     background-color: #E4E8E6;

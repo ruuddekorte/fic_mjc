@@ -64,6 +64,7 @@
 						<?php edit_post_link('Edit ','','<strong>|</strong>'); ?>  
 						<?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
 					</p>
+					
 <?php
 			// Previous/next post navigation.
 			the_post_navigation( array(
