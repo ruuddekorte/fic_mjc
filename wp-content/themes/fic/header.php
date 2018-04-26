@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset');?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta name="likebtn-website-verification" content="c369762328daf932" />
 	<?php wp_head()?>
 	
 </head>
