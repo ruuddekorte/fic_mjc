@@ -15,8 +15,8 @@
 		<main>
 			<!-- <h1>Initiatives Citoyennes</h1> -->
 
-			<img class="alignnone size-full wp-image-20 img_google" src="/wp-content/uploads/2018/04/plan.jpeg" alt="" width="955" height="482" />
-		
+			
+									
 		<?php
 
 $term = get_field('initiative');

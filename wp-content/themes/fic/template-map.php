@@ -9,6 +9,8 @@
 	##                MAIN
 */	########################################
 ?>
+
+
 <main>
 <!-- Placeholder for google map image -->
 <div id="my-map"></div>
@@ -17,12 +19,6 @@
 		(function($) {
 			var specimens = [
 				<?php
-					/* Get amphibians */
-					// $args = [
-					// 	'post_type' => 'initiatives',
-					// 	'orderby' => 'menu_order',
-					// 	'order' => 'DESC',
-					// 	'posts_per_page' => '-1'
 
 				$args = [
 					'post_type' => 'initiatives',
@@ -36,53 +32,32 @@
 					'orderby' => 'menu_order',
 					'order' => 'DESC',
 					'posts_per_page' => '-1'
-					];
-					$specimens_query = new WP_Query( $args );
+							];
 
-					// The Loop
-					if ( $specimens_query->have_posts() ) :
+							$specimens_query = new WP_Query( $args );
 
-						while ( $specimens_query->have_posts() ) :
-							$specimens_query->the_post();
+							// The Loop
+							if ( $specimens_query->have_posts() ) :
 
-							// $location = get_field('map');
-							$location = get_field('localisation');
+								while ( $specimens_query->have_posts() ) :
+									$specimens_query->the_post();
 
-							if(!empty($location)) :
 
-// $type = get_field('type');
+									$location = get_field('map');
 
-// if($type == "autre") {
-// 	$labeltype = get_field('othe_type');
-// } else {
-// 	$labeltype = $specimens[$type];
-// }
+									if(!empty($location)) :
 
-// if(get_field('image')) {
-// 	$image = wp_get_attachment_image(get_field('image'), 'specimen')
-
-// } else {
-
-// 	$image = '<img src="' . get_bloginfo('stylesheet_directory') . '/static/build/img/specimens/' . $type . '_default.jpg">';
-
-// }
-
-							echo "{";
-// echo "'pictos':'" . $type . "',";
-// echo "'type':'" . $labeltype . "',";
-									echo "'lat':" . $location['lat'] . ",";
-									echo "'lng':" . $location['lng'] . ",";
-// echo "'date':'" . get_field('observer_date') . "',";
-// echo "'observer':'" . get_field('observer') . "',";
-// echo "'image':'" . $image . "',";
-								echo "},\n";
+										echo "{";
+											echo "'lat':" . $location['lat'] . ",";
+											echo "'lng':" . $location['lng'] . ",";
+										echo "},\n";
+									endif;
+								endwhile;
 							endif;
-						endwhile;
-					endif;
-					/* Restore original Post Data */
-					wp_reset_postdata();
-				?>
-			];
+							/* Restore original Post Data */
+							wp_reset_postdata();
+						?>
+					];
 
 		/* Init map, must be public for callback  */
 			initMap = function() {
@@ -143,22 +118,26 @@
 				var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
 			}
 		})(jQuery);
-	</script>
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-</script>
-	<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_geB4hpknOVuZyGDNTmsvTwnUx7B_UeM&callback=initMap"></script>
+			</script>
 
-<?php
+			<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
-$term = get_field('initiative');
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_geB4hpknOVuZyGDNTmsvTwnUx7B_UeM&callback=initMap"></script>
 
-if( $term ): ?>
 
-<h2><?php echo $term->name; ?></h2>
-<p><?php echo $term->description; ?></p>
 
-<?php endif; 
+		<?php
+
+			$term = get_field('initiative');
+
+			if( $term ):
+			 ?>
+			 <h2>
+				<?php echo $term->name; ?>
+				</h2>
+				<p><?php echo $term->description; ?></p>
+
+			<?php endif; 
 
 /*	########################################
 ##        Start the Loop (boucle)
