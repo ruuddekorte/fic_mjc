@@ -81,7 +81,7 @@ if (have_posts()) :
 					markers = [];
 				/* Init map */
 				var map = new google.maps.Map($('#my-map')[0], {
-						zoom: 13,
+						zoom: 12,
 						center: center
 					}),
 					geocoder = new google.maps.Geocoder,
@@ -112,7 +112,7 @@ if (have_posts()) :
 						var html = '';
 						html += '<div class="initiatives-tooltip">';
 							html += '<p>';
-								html += '<strong>' + this.nom + '</strong>';
+								html += '<strong>' + this.name + '</strong>';
 							html += '</p>';
 						html += '</div>';
 
@@ -165,16 +165,18 @@ if (have_posts()) :
 
 				// The Loop
 				if ( $term_query->have_posts() ) :
-
-					while ( $term_query->have_posts() ) :
+					?>
+					<div class="row  text-center"><div class="col-lg-1 col-sm-0"> </div><div class="col-lg-10 col-sm-12 cadre">
+					<h2>Liste des idées proposées pour les initiatives :</h2>
+					<?php while ( $term_query->have_posts() ) :
 						$term_query->the_post(); ?>
+							<article>
+								<h3><?php the_title();?> <a href="<?php the_permalink();?>" class="little_text"><?php _e("...voir l'idée"); ?></a></h3>
 
-						<article>
-							<h2><?php the_title();?></h2>
-							<a href="<?php the_permalink();?>"><?php _e("Voir l'idée"); ?></a>
-						</article>
-					<?php endwhile;
-				endif;
+							</article>
+					<?php endwhile; ?>
+					</div><div class="col-lg-1 col-sm-0"> </div></div>
+				<?php endif;
 				/* Restore original Post Data */
 				wp_reset_postdata();
 				?>
@@ -184,22 +186,20 @@ if (have_posts()) :
 			</section>
 
 		<?php endif; ?>
+			<div class="form_links">
+		    	<?php // Purpose 
+		    	if(get_field('propose_link')) : ?>
 
-    	<?php // Purpose 
-    	if(get_field('propose_link')) : ?>
-	    	<div>
-	    		<a href="<?php the_field('propose_link'); ?>" class="btn btn-primary"><?php _e("Je propose une initiative"); ?></a>
-    		</div>
-    	<?php endif; ?>
+			    		<a href="<?php the_field('propose_link'); ?>" class="fabrique fic_red"><?php _e("Je propose une initiative"); ?></a>
+		    	<?php endif; ?>
+		    	<?php // Organize 
+		    	if(get_field('organize_link')) : ?>
 
-    	<?php // Organize 
-    	if(get_field('organize_link')) : ?>
-    		<div>
-    			<a href="<?php the_field('organize_link'); ?>" class="btn btn-primary"><?php _e("J'organise une initiative"); ?></a>
-    		</div>
-    	<?php endif; ?>
+		    			<a href="<?php the_field('organize_link'); ?>" class="fabrique fic_blue"><?php _e("J'organise une initiative"); ?></a>
 
-    	<?php // Organize ?>
+		    	<?php endif; ?>
+		    </div>
+
 	<?php endwhile; 
 else: ?>
 	<h1><?php _e("Page non trouvée"); ?></h1>

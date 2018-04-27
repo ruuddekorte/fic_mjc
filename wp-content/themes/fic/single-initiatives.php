@@ -5,7 +5,7 @@
 			if (have_posts()) :
 				while (have_posts()) :
 			    	the_post(); ?>
-		       		<div class="row">
+		       		<div class="row cadre">
 						<div class="col-lg-8 col-sm-12">
 							<h2 id="post-<?php the_ID(); ?>">Initiative Citoyenne : <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
 								<?php the_title(); ?></a>
@@ -14,16 +14,22 @@
 								<h3>Lieu : <?php the_field('lieu'); ?></h3>
 							<?php endif; ?>
 						</div>
+
 						<div class="col-lg-4 col-sm-12">
-							<h3><?php if( get_field('date_debut') ): 
-								$dateDebut = get_field('date_debut', false, false);
-								$dateDebut = new DateTime($dateDebut);
-								echo $dateDebut->format('j M Y'); ?>
-							<?php endif; ?>	
-							</h3>
+
+								<h3><?php if( get_field('date_debut') ): 
+									$dateDebut = get_field('date_debut', false, false);
+									$dateDebut = new DateTime($dateDebut);
+									echo $dateDebut->format('j M Y'); ?>
+								<?php endif; ?>	
+								</h3>
 						</div>
-						<div class="col-lg-8 col-sm-12">
+										
+						<div class="col-lg-12 col-sm-12">
 					        <p class="entry"><strong>Description : </strong><?php the_content(); ?></p>
+					    </div>
+	   					<div class="col-lg-8 col-sm-12">
+	    
 							<?php if( get_field('partenaire') ): ?>
 									<p><strong>Partenaire : </strong><?php the_field('partenaire'); ?></p>
 								<?php endif; ?>
@@ -48,12 +54,15 @@
 							endif; ?>
 							</p>
 						</div>
+
 						<div class="col-lg-4 col-sm-12">
 							<?php if( get_field('besoins') ): ?>
 								<p><strong>Besoin(s) : </strong><?php the_field('besoins'); ?></h3>
 							<?php endif; ?>
 						</div>
+
 		       		</div>
+
 					<small>Cette Initiative Citoyenne est deposé le :
 						<?php the_time('j F Y') ?> 
 						<!-- by <?php the_author() ?> -->
