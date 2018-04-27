@@ -71,7 +71,7 @@ header {
     height: 500px;
     border: #ccc solid 1px;
     margin: 20px 0;
-    background-color: pink;
+    background-color: #BAD3BA;
 }
 
 /* fixes potential theme css conflict */
@@ -85,17 +85,27 @@ header {
 .fabrique {
     display: block;
     margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
     padding:5px;
     font-size:1.5em;
     color:#fff;
     border:2px solid #000;
     width:40%;
-    /*height:200px;*/
+}
+
+.form_links a,
+.form_links a:hover,
+.form_links a:link, 
+.form_links a:visited, 
+.form_links a:active {
+    color: #fff;
+    text-decoration: none;
 }
 
 .fic_red {
     background-color: #EB212E;
-
 }
 
 .fic_blue {
@@ -195,9 +205,14 @@ h2.screen-reader-text {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     box-shadow: 3px 3px 12px #999;  
     -moz-box-shadow: 3px 3px 12px #999;
     -webkit-box-shadow: 3px 3px 12px #999;
     
+}
+
+.little_text {
+    font-size: 0.8rem;
 }
