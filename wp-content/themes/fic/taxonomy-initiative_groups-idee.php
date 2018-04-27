@@ -11,7 +11,7 @@
 		<main>
 			<!-- page /initiative_groups/idee/ -->
 			<!-- <h1>Initiatives Citoyennes</h1> -->
-			<p>Sur cette page vous trouverez les initiatives qui seront organisée. Les plus elles sont 'likes',  plus elles ont de chance d'être réalisée.<p>	
+			<p>Sur cette page vous trouverez les propositions d'idées pour qu'elles deviennent des initiatives, merci de les 'liker'.  Plus elles sont 'liker', plus elles ont de chance d'être réalisées.<p>	
 
 		<?php
 
