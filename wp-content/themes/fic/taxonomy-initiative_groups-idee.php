@@ -18,10 +18,9 @@
 $term = get_field('initiative');
 
 if( $term ): ?>
-
+ 
 	<h2><?php echo $term->name; ?></h2>
-	<p><?php echo $term->description; ?></p>
-
+	<p><?php echo $term->description; ?></p>s
 <?php endif; 
 
 /*	########################################
