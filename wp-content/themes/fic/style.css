@@ -159,8 +159,8 @@ body {
     background-color: #E4E8E6;
 }
 main {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
@@ -181,4 +181,23 @@ h2.screen-reader-text {
 
 .screen-reader-text {
     display: none;
+}
+
+.listing-idee {
+     border: 2px solid #444;
+     margin-bottom: 2rem;
+   
+}
+.cadre {
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-color: #fff;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 3px 3px 12px #999;  
+    -moz-box-shadow: 3px 3px 12px #999;
+    -webkit-box-shadow: 3px 3px 12px #999;
+    
 }

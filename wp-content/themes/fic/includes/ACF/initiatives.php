@@ -114,3 +114,55 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_googlemaps',
+		'title' => 'GoogleMaps',
+		'fields' => array (
+			array (
+				'key' => 'field_5ae09773ebfe6',
+				'label' => 'localisation',
+				'name' => 'localisation',
+				'type' => 'google_map',
+				'center_lat' => '44.3545532',
+				'center_lng' => '2.5602832',
+				'zoom' => 13,
+				'height' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'initiatives',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+				array (
+					'param' => 'taxonomy',
+					'operator' => '!=',
+					'value' => '3',
+					'order_no' => 1,
+					'group_no' => 0,
+				),
+				array (
+					'param' => 'taxonomy',
+					'operator' => '!=',
+					'value' => '1',
+					'order_no' => 2,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
