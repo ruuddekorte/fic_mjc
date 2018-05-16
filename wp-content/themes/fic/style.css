@@ -134,15 +134,23 @@ header {
     border: 0;
     border-right: 1px solid darkgrey;
     border-left: 1px solid darkgrey;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.img-footer {
+    display: block;
+    margin: auto;
+    max-width : 15%;
+    height: auto;
+    margin-top: 0.5rem;
 }
 
 footer {
     border-top: 3px solid #668894;
     border-top: solid blue;
     background-color: #cccccc;
-    padding-bottom: 50px;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 }
 
 

@@ -27,6 +27,8 @@
 			</nav>
 				<!-- <a href="/"><img src="<?php echo get_template_directory_uri();?>/img/logos/LOGO-FIC.png" alt="" class="img-responsive"></a> -->
 		</div>
+
+		<!-- code for using the facebook 'widget' -->
 		<div id="fb-root"></div>
 			<script>(function(d, s, id) {
 			  var js, fjs = d.getElementsByTagName(s)[0];
@@ -34,7 +36,7 @@
 			  js = d.createElement(s); js.id = id;
 			  js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12';
 			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>s
+			}(document, 'script', 'facebook-jssdk'));</script>
 
 	</header>
 <!-- ============================================== -->	
